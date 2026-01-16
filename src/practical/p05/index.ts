@@ -1,2 +1,5 @@
-export function safeFetchComment() {}
+
+export async function safeFetchComment() : promise < Post{
+
+}
 
