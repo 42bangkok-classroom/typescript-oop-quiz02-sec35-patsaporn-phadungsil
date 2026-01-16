@@ -16,13 +16,21 @@ export async function getEdgePosts(): Promise<Post[]> {
     if (posts.length === 0) return [];
 
     if (posts.length === 1) {
-      const {id,title} posts[0];
-      return [{id,title},
-        {id,tile}];
+      const { id, title } = posts[0];
+      return [
+        { id, title },
+        { id, title },
+      ];
+    }
+
+    const first = posts[0];
+    const last = posts[posts.length - 1];
+
+    return [
+      { id: first.id, title: first.title },
+      { id: last.id, title: last.title },
+    ];
+  } catch (err) {
+    throw err;
   }
-  const frist = posts[0];
 }
-  const last = posts[posts.length - 1];
-  return [{id,title},
-    {id,tile}];
-  }
