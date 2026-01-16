@@ -34,7 +34,7 @@ export async function mapPostWithCommentCount(): Promise<ResultPost[]> {
       ).length;
 
       return {
-        postId: post.id,   // ✅ rename id → postId
+        postId: post.id,
         title: post.title,
         totalComments,
       };
