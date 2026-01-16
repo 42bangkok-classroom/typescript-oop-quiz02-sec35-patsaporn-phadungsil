@@ -1,1 +1,1 @@
-export function mapPostWithCommentCount() {}
+export async function mapPostWithCommentCount(Post: number) {}
